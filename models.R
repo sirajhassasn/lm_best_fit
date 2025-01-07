@@ -1,6 +1,6 @@
 
 rm(list=ls())
-setwd("C:\\Users\\KHAN\\Downloads\\archive (1)")
+setwd("")
 data<-read.csv("CarPrice_Assignment.csv")
 dim(data)
 head(data)
