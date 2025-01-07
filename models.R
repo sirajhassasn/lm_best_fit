@@ -1,7 +1,7 @@
 
 rm(list=ls())
 setwd("")
-data<-read.csv("CarPrice_Assignment.csv")
+data<-read.csv("carprice_assignment.csv")
 dim(data)
 head(data)
 mydata<-data.frame(data[,c(26,2,10:13,17,19:25)])
