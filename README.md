@@ -68,19 +68,19 @@ formulas <- sapply(formulas, as.formula)
 ```
 - Converts the nested list of formulas into a flat vector and ensures all formulas are valid R formulas using `as.formula`.
 
-### 8. Fit All Models
+### Fit All Models
 
 models <- lapply(formulas, lm, data = mydata)
 
 - Uses `lapply()` to fit a linear regression model for each formula in `formulas`. All models are stored in the `models` list.
 
-### 9. Count Models
+### Count Models
 
 length(models)
 
 - Outputs the total number of models fitted. For 13 variables, there are \( 2^{13} - 1 = 8191 \) possible models.
 
-### 10. Inspect First Model
+### Inspect First Model
 
 summary(models[[1]])$r.square
 
